@@ -1,7 +1,7 @@
 # KoT5-MSS
-###KoT5 Media-Script-Summarization
+### KoT5 Media-Script-Summarization
 
-##Setup
+## Setup
 - 사전학습에 사용된 모델 버전은 t5==0.6.4, mesh_tensorflow==0.1.17
 - 반드시 t5 모듈을 먼저 설치하고 rouge-score을 삭제해야함
 ```
@@ -16,7 +16,7 @@ pip install konlpy
 ```
 
 
-##Data
+## Data
 
 ### Download
 - 아래 링크의 데이터셋을 내려받은 후 ./datas 폴더에서 압축해제
@@ -33,16 +33,16 @@ pip install konlpy
 python ./datas/preprocessing.py --data_dir ./datas/ --domain all --output_length all
 ```
 
-##Model Install
+## Model Install
 - 아래 링크의 모델을 내려받은 후 ./models 폴더에서 압축해제
 ***(변경될 예정)***
 
 | model | Download | 
 | --- | --- | 
-| T5-Small, T5-Base, Vocab | [link](https://storage.googleapis.com/nlp_bucket-1/KoT5_models/kbs_dialog_smr/datas.zip) |
+| T5-Small, T5-Base, Vocab | [link](https://storage.googleapis.com/nlp_bucket-1/KoT5_models/kbs_dialog_smr/models.zip) |
 
 
-##Train example
+## Train example
 - 아래 경로의 스크립트 실행
 ```
 #./scripts/gpu/train_t5_small_all_all.sh
@@ -65,7 +65,7 @@ python -m t5.models.mesh_transformer_main \
 --gin_param="utils.run.save_checkpoints_steps=100"
 ```
 
-##Test Example
+## Test Example
 - 아래 경로의 스크립트 실행
 ```
 #./scripts/gpu/test_t5_small_all_all.sh
@@ -90,6 +90,6 @@ python -m t5.models.mesh_transformer_main \
 
 
 
-##License
+## License
 **KoT5**는 [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 라이선스 하에 공개되어 있습니다. \
 모델을 사용할 경우 라이선스 내용을 준수해주세요. 라이선스 전문은 [LICENSE](./LICENSE) 파일에서 확인하실 수 있습니다.
