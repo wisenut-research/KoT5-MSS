@@ -7,7 +7,6 @@
 ```
 pip install t5==0.6.4
 pip install mesh_tensorflow==0.1.17
-pip uninstall rouge-score
 ```
 - 평가에는 형태소 토큰 단위 Rouge가 사용되었으며, Komoran 라이브러리를 통해 형태소 분석을 수행함
 ```
@@ -43,49 +42,44 @@ python ./datas/preprocessing.py --data_dir ./datas/ --domain all --output_length
 
 
 ## Train example
-- 아래 경로의 스크립트 실행
+- 아래 경로의 스크립트 실행 \./scripts/gpu/train_t5_small_all_all.sh
 ```
-#./scripts/gpu/train_t5_small_all_all.sh
 python -m t5.models.mesh_transformer_main \
 --module_import="tasks.all_all" \
 --model_dir="models/small/" \
 --gin_param="utils.run.mesh_shape = 'model:1,batch:1'" \
 --gin_param="utils.run.mesh_devices = ['gpu:0']" \
 --gin_param="MIXTURE_NAME = 'korsmr'" \
---gin_param="utils.run.train_steps=20000" \
---gin_file="dataset.gin" \
+--gin_param="utils.run.train_steps=120000" \
 --gin_param="SentencePieceVocabulary.extra_ids=100" \
---gin_file="models/base/operative_config.gin" \
---gin_file="cnn_dailymail_v002.gin" \
---gin_file="rsqrt_no_ramp_down.gin" \
---gin_file="t5.1.0.small.gin" \
 --gin_param="utils.tpu_mesh_shape.model_parallelism = 1" \
 --gin_param="utils.run.batch_size=('tokens_per_batch', 2560)" \
 --gin_param="serialize_num_microbatches.tokens_per_microbatch_per_replica = 512" \
---gin_param="utils.run.save_checkpoints_steps=100"
+--gin_param="utils.run.save_checkpoints_steps=100" \
+--gin_file="models/small/operative_config.gin"
+--gin_file="gins/cnn_dailymail_v002.gin" \
+--gin_file="gins/dataset.gin"
 ```
 
 ## Test Example
-- 아래 경로의 스크립트 실행
+- 아래 경로의 스크립트 실행 \
+./scripts/gpu/test_t5_small_all_all.sh
 ```
-#./scripts/gpu/test_t5_small_all_all.sh
-python -m t5.models.mesh_transformer_main \
 --module_import="tasks.all_all" \
 --model_dir="models/small" \
 --gin_param="utils.run.mesh_shape = 'model:1,batch:1'" \
 --gin_param="utils.run.mesh_devices = ['gpu:0']" \
 --gin_param="MIXTURE_NAME = 'korsmr'" \
 --gin_param="SentencePieceVocabulary.extra_ids=100" \
---gin_file="models/small/operative_config.gin" \
---gin_param="utils.tpu_mesh_shape.model_parallelism = 1" \
 --gin_param="utils.run.batch_size=('tokens_per_batch', 2560)" \
 --gin_param="serialize_num_microbatches.tokens_per_microbatch_per_replica = 512" \
 --gin_param="eval_checkpoint_step = 'all'" \
---gin_file="eval.gin" \
---gin_file="beam_search.gin" \
---gin_file="cnn_dailymail_v002.gin" \
---gin_file="rsqrt_no_ramp_down.gin" \
---gin_file="t5.1.0.small.gin"
+--gin_param="run.dataset_split = 'validation'" \
+--gin_file="models/small/operative_config.gin" \
+--gin_file="gins/cnn_dailymail_v002.gin" \
+--gin_file="gins/dataset.gin" \
+--gin_file="gins/beam_search.gin" \
+--gin_file="gins/eval.gin"
 ```
 
 

@@ -76,8 +76,17 @@ def parse_by_task(df, output_length="all", domain="all"):
         df_output['tmp'] = df_output.replace({"tmp": domain_dict})
         prefix = output_length_dict[output_length] + '요약 : '
         df_output.reset_index(inplace=True)
-        df_output = df_output.drop(['summary2', 'summary3'], axis=1)
-        df_output.rename(columns={'summary1': 'summary'}, inplace=True)
+
+        if output_length == 'single' :
+            df_output = df_output.drop(['summary2', 'summary3'], axis=1)
+            df_output.rename(columns={'summary1': 'summary'}, inplace=True)
+        elif output_length == '3sent' :
+            df_output = df_output.drop(['summary1', 'summary3'], axis=1)
+            df_output.rename(columns={'summary2': 'summary'}, inplace=True)
+        else : #20per
+            df_output = df_output.drop(['summary1', 'summary2'], axis=1)
+            df_output.rename(columns={'summary3': 'summary'}, inplace=True)
+
         df_output = df_output[df_output.summary != "None"]
         df_output['context'] = df_output.replace({"tmp": domain_dict})['tmp'].astype(str) + prefix + + df_output[
             'context'].astype(str)

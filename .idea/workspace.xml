@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fdcde6ab-fa99-4492-a7b5-46d62c51e77a" name="Default Changelist" comment="edit read me">
+    <list default="true" id="fdcde6ab-fa99-4492-a7b5-46d62c51e77a" name="Default Changelist" comment="edit script file">
+      <change afterPath="$PROJECT_DIR$/datas/Test_all_all.tsv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/datas/rouge.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gins/beam_search.gin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gins/cnn_dailymail_v002.gin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gins/dataset.gin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gins/eval.gin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gins/greedy_decode.gin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gins/infer.gin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gins/rsqrt_no_ramp_down.gin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/base/validation_eval/korsmr_744300_predictions" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/base/validation_eval/korsmr_inputs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/base/validation_eval/korsmr_targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/data/rouge.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/t5_kbs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/t5_mss.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas/pre_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/datas/pre_processing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rouge_score/rouge_scorer.py" beforeDir="false" afterPath="$PROJECT_DIR$/rouge_score/rouge_scorer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/gpu/test_t5_base_all_all.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/gpu/test_t5_base_all_all.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/gpu/test_t5_small_all_all.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/gpu/test_t5_small_all_all.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/gpu/train_t5_base_all_all.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/gpu/train_t5_base_all_all.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/gpu/train_t5_small_all_all.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/gpu/train_t5_small_all_all.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/tpu/test_t5_base_all_all.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/tpu/test_t5_base_all_all.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/tpu/test_t5_small_all_all.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/tpu/test_t5_small_all_all.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/tpu/train_t5_base_all_all.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/tpu/train_t5_base_all_all.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/tpu/train_t5_small_all_all.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/tpu/train_t5_small_all_all.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +43,14 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="23Zu5yLYUgOc00uCCBiVbitZwD0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -27,22 +60,24 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../KoT5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\usgnob\PycharmProjects\t5_mss\datas" />
+      <recent name="C:\Users\usgnob\PycharmProjects\t5_mss\models\base\validation_eval" />
+      <recent name="C:\Users\usgnob\PycharmProjects\t5_mss\gins" />
+      <recent name="C:\Users\usgnob\PycharmProjects\t5_mss\gin" />
       <recent name="C:\Users\usgnob\PycharmProjects\t5_kbs\datas" />
-      <recent name="C:\Users\usgnob\PycharmProjects\t5_kbs\models\small" />
-      <recent name="C:\Users\usgnob\PycharmProjects\t5_kbs\models" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\usgnob\PycharmProjects\t5_kbs\models\small" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.rouge">
     <configuration name="pre_processing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="t5_kbs" />
+      <module name="t5_mss" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -54,7 +89,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/datas/pre_processing.py" />
-      <option name="PARAMETERS" value="--data_dir ./datas --domain history --output_length single" />
+      <option name="PARAMETERS" value="--data_dir ./datas --domain fs_drama --output_length 20per" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -62,8 +97,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="rouge" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="t5_mss" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/datas/rouge.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.pre_processing" />
+      <item itemvalue="Python.rouge" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.rouge" />
         <item itemvalue="Python.pre_processing" />
       </list>
     </recent_temporary>
@@ -119,7 +180,21 @@
       <option name="project" value="LOCAL" />
       <updated>1641976409686</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="edit read me">
+      <created>1641977079164</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1641977079164</updated>
+    </task>
+    <task id="LOCAL-00008" summary="edit script file">
+      <created>1642577473150</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1642577473150</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,33 +237,50 @@
         <entry key="974bd00f-9aea-4e76-9afd-23403a24819a" value="TOOL_WINDOW" />
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="edit read me" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit read me" />
+    <MESSAGE value="edit script file" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit script file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/datas/pre_processing.py</url>
-          <line>116</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/datas/pre_processing.py</url>
-          <line>112</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/datas/pre_processing.py</url>
-          <line>125</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/datas/pre_processing.py</url>
-          <line>121</line>
+          <line>130</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/datas/pre_processing.py</url>
+          <line>137</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/datas/pre_processing.py</url>
+          <line>97</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/datas/pre_processing.py</url>
+          <line>73</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/datas/rouge.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/datas/rouge.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/datas/rouge.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -197,6 +289,11 @@
         <watch expression="folder_list" language="Python" />
         <watch expression="data_dir" language="Python" />
         <watch expression="mode" language="Python" />
+        <watch expression="result_df" language="Python" />
+        <watch expression="df_single" language="Python" />
+        <watch expression="df_3sent" language="Python" />
+        <watch expression="df" language="Python" />
+        <watch expression="df_output['tmp']" language="Python" />
       </configuration>
     </watches-manager>
   </component>

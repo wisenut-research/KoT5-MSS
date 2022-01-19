@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/t5_kbs.iml" filepath="$PROJECT_DIR$/.idea/t5_kbs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/t5_mss.iml" filepath="$PROJECT_DIR$/.idea/t5_mss.iml" />
     </modules>
   </component>
 </project>

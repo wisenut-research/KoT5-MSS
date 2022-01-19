@@ -115,10 +115,13 @@ class RougeScorer(scoring.BaseScorer):
                     sents = [x for x in sents if len(x)]
                     return sents
 
+                ####edit by usgnob 20220110
                 target_tokens_list = [
-                    tokenize.tokenize(s, self._stemmer) for s in get_sents(target)]
+                    self.tokenizer.morphs(s) for s in get_sents(target)]
                 prediction_tokens_list = [
-                    tokenize.tokenize(s, self._stemmer) for s in get_sents(prediction)]
+                    self.tokenizer.morphs(s) for s in get_sents(prediction)]
+                ######
+
                 scores = _summary_level_lcs(target_tokens_list,
                                             prediction_tokens_list)
             elif re.match(r"rouge[0-9]$", six.ensure_str(rouge_type)):
